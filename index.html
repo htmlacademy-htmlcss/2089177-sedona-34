@@ -1,54 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <!-- logo -->
-        <div class="haider-logo">
-          <a href="index.html"
-            ><img
-              src="#"
-              width="139"
-              height="70"
-              alt="Переход на главную страницу"
-          /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <!-- logo -->
+      <div class="page-haider-logo">
+        <a href="index.html"><img src="#" width="139" height="70" alt="Переход на главную страницу" /></a>
+      </div>
+      <!-- navigation -->
+      <nav class="main-nav nav">
+        <ul>
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">О Cедоне</a></li>
+          <li class="main-nav__item"><a href="#">Гостиницы</a></li>
+          <li class="main-nav__item">
+            <form class="main-nav__search" method="get" action="#">
+              <input class="main-nav__search-input" id="search" type="search" name="search"
+                placeholder="Поиск по сайту" />
+              <button class="main-nav__search-btn" type="submit">Найти</button>
+              <span class="visually-hidden">Поиск:</span>
+
+            </form>
+          <li class="main-nav__user-item-cart">
+            <a class="main-nav__user-link-cart" href="#">Избранное</a>
+            <span class="visually-hidden">Избранное:</span>
+          </li>
+          </li>
+          <button class="main-nav__button">Хочу сюда!</button>
+        </ul>
+      </nav>
+    </header>
+    <!-- main content -->
+    <main class="page-content">
+      <div class="main-background__image">
+        <div class="main-background__text-image"></div>
+      </div>
+      <div class="main-wrapper">
+        <div class="main-wrapper__title">
+          <h1 class="main-title__title">Седона - небольшой городок в аризоне,</br> заслуживающий большего!</h1>
+          <p class="main-title__subtitle">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         </div>
-        <!-- navigation -->
-        <nav class="main-nav nav">
-          <ul>
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">О седоне</a></li>
-            <li class="main-nav__item"><a href="#">Гостиницы</a></li>
-            <li class="main-nav__item">
-              <form class="main-nav__search" method="get" action="#">
-                <input
-                  class="main-nav__search-input"
-                  id="search"
-                  type="search"
-                  name="search"
-                  placeholder="Поиск по сайту"
-                />
-                <button class="main-nav__search-btn" type="submit">Найти</button>
-                <label class="main-nav__search-label" for="search">
-                  <span class="visually-hidden">Поиск:</span>
-                </label>
-              </form>
-              <li class="main-nav__user-item-cart">
-                <a class="main-nav__user-link-cart" href="#">Избранное</a>
-              </li>
-            </li>
-            <button class="main-nav__button">Хочу сюда!</button>
-          </ul>
-        </nav>
-      </header>
-      <main class="content"></main>
-      <footer class="main-footer"></footer>
-    </div>
-  </body>
+      </div>
+      <section class="content-main info-main">
+        <div class="info-main__block">
+          <div class="info-main text-white">
+            <h2 class="info-main__title">Настоящий городок</h2>
+            <p class="info-main__subtitle">— №1 —</p>
+            <p class="info-main__subtitle">Седона - не аттракцион для туристов,</br>там течет своя жизнь</p>
+          </div>
+        </div>
+        <div class="info-main__photo photo-one">
+        </div>
+      </section>
+      <section class="content-main info-main">
+        <div class="info-main__living">
+          <div class="info-main__icon icon-living">
+          </div>
+          <h3 class="main__title">Жилье</h3>
+          <p class="info-main__text">Рекомендуем пожить</br> в настоящем мотеле,</br> все как в кино!</p>
+        </div>
+        <div class="info-main__food">
+          <div class="info-main__icon icon-food">
+          </div>
+          <h3 class="main__title">Еда</h3>
+          <p class="info-main__text">Всегда, заказывайте</br> топовый фирменный бургер,</br> вы не разочаруетесь!</p>
+        </div>
+        <div class="info-main__souvenir">
+          <div class="info-main__icon icon-souvenir">
+          </div>
+          <h3 class="main__title">Сувениры</h3>
+          <p class="info-main__text">Не только китайского,</br>но и настоящего местного производства!</p>
+        </div>
+      </section>
+      <section class="content-main info-main">
+        <div class="info-main__photo photo-two">
+        </div>
+        <div class="info-main text-white">
+          <h2 class="info-main__title">Там есть Мост Дьявола</h2>
+          <p class="info-main__subtitle">— №2 —</p>
+          <p class="info-main__subtitle">Да, по нему можно пройти!</br> Если вы осмелитесь,</br>разумеется</p>
+        </div>
+      </section>
+      <section class="content-main info-main">
+        <div class="info-main__text">
+          <h2 class="info-main__title">Небольшая площадь</h2>
+          <p class="info-main__hr">— №3 —</p>
+          <p class="info-main__desc">Все достопримечательности</br> находятся очень близко</p>
+        </div>
+        <div class="info-main__text">
+          <h2 class="info-main__title">Красивая дорога</h2>
+          <p class="info-main__hr">— №4 —</p>
+          <p class="info-main__desc">Ехать в Седону из Лас-Вегаса</br> совсем не скучно!</p>
+        </div>
+        <div class="info-main__text">
+          <h2 class="info-main__title">Мало туристов</h2>
+          <p class="info-main__hr">— №5 —</p>
+          <p class="info-main__desc">Большинство едет в Гранд Каньон</br> и толпится там</p>
+        </div>
+      </section>
+      <section class="content-main travel-info">
+        <div class="main-wrapper__title">
+          <h2 class="main-title__title">Заинтересовались?</h2>
+          <p class="main-title__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+            гостиниц в Седоне</p>
+        </div>
+        <div class="travel__search">
+          <button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
+        </div>
+      </section>
+      <section class="content-main mailing">
+        <div class="main-wrapper__title white">
+          <h2 class="main-title__title">Подпишитесь на рассылку</h2>
+          <p class="main-title__subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        </div>
+        <div class="mailing__subscribe">
+          <form class="mailing__subscribe-form" method="post" action="#">
+            <input class="mailing__form" id="text" type="text" name="text" placeholder="Ваш e-mail" />
+            <button class="mailing__subscribe-btn" type="submit">Подписаться</button>
+            <span class="visually-hidden">Подписаться:</span>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-social">
+        <a href="" class="social-btn vk">
+          <span class="icon-vkontakte"></span>
+        </a>
+        <a href="" class="social-btn tg">
+          <span class="icon-telegram"></span>
+        </a>
+        <a href="" class="social-btn ytb">
+          <span class="icon-youtube"></span>
+        </a>
+      </div>
+      <div class="footer-telephone">
+        <a href="#" class="telephone-btn tp">+7 (812) 812-12-12</a>
+      </div>
+      <div class="developer-item">
+        <a href="https://htmlacademy.ru/">HTML Academy</a>
+        <div class="developer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
