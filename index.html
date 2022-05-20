@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="haider-logo">
+          <a href="index.html"
+            ><img
+              src="#"
+              width="139"
+              height="70"
+              alt="Переход на главную страницу"
+          /></a>
+        </div>
+        <nav class="main-nav nav">
+          <ul>
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">О седоне</a></li>
+            <li class="main-nav__item"><a href="#">Гостиницы</a></li>
+            <li class="main-nav__item">
+              <form class="main-nav__search" method="get" action="#">
+                <input
+                  class="main-nav__search-input"
+                  id="search"
+                  type="search"
+                  name="search"
+                  placeholder="Поиск по сайту"
+                />
+                <button class="main-nav__search-btn" type="submit">Найти</button>
+                <label class="main-nav__search-label" for="search">
+                  <span class="visually-hidden">Поиск:</span>
+                </label>
+              </form>
+              <li class="main-nav__user-item-cart">
+                <a class="main-nav__user-link-cart" href="#">Избранное</a>
+              </li>
+            </li>
+            <button class="main-nav__button">Хочу сюда!</button>
+          </ul>
+        </nav>
+      </header>
+      <main class="content"></main>
+      <footer class="main-footer"></footer>
+    </div>
+  </body>
 </html>
