@@ -18,9 +18,9 @@
       <!-- navigation -->
       <nav class="main-nav nav">
         <ul>
-          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="#">О Cедоне</a></li>
-          <li class="main-nav__item"><a href="#">Гостиницы</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Гостиницы</a></li>
           <li class="main-nav__item">
             <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru/">
               <input class="main-nav__search-input" id="search" type="search" name="search"
@@ -138,13 +138,13 @@
     <footer class="page-footer">
       <div class="footer-social">
         <a href="" class="social-btn vk">
-          <span class="icon-vkontakte"></span>
+          <span class="icon-vkontakte">vk</span>
         </a>
         <a href="" class="social-btn tg">
-          <span class="icon-telegram"></span>
+          <span class="icon-telegram">tg</span>
         </a>
         <a href="" class="social-btn ytb">
-          <span class="icon-youtube"></span>
+          <span class="icon-youtube">ytb</span>
         </a>
       </div>
       <div class="footer-telephone">
@@ -169,28 +169,29 @@
 
         <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="popup-item">
-            <p class="popup-form-text">Дата Заезда</p>
+            <p class="popup-form__text">Дата Заезда</p>
             <input class="popup-check-form" id="check" type="date" name="text" />
+            <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="popup-item">
             <p class="popup-form-text">Дата Выезда</p>
             <input class="popup-exit-form" id="exit" type="date" name="text" />
           </div>
-          <div class="popup-item_change">
+          <div class="popup-item__change">
             <p class="popup-form-text">Взрослые:</p>
-            <div class="popup-form_change">
+            <div class="popup-form__change">
               <button class="decrease" type="button">-</button>
-              <input type="text" name="field" value="2" />
+              <input type="text" name="field" value="2"/>
               <button class="increase" type="button">+</button>
             </div>
           </div>
-          <div class="popup-form_change">
-            <p class="popup-form-text">Дети:</p>
+          <div class="popup-form__change">
+            <p class="popup-form__text">Дети:</p>
             <div class="popup-form__info"
               data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
               i
             </div>
-            <div class="popup-form_change">
+            <div class="popup-form__change">
               <button class="decrease" type="button">-</button>
               <input type="text" name="field" value="1" />
               <button class="increase" type="button">+</button>

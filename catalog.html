@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <!-- logo -->
+      <div class="page-haider-logo">
+        <a href="index.html"><img src="#" width="139" height="70" alt="Переход на главную страницу" /></a>
+      </div>
+      <!-- navigation -->
+      <nav class="main-nav nav">
+        <ul>
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="#">О Cедоне</a></li>
+          <li class="main-nav__item"><a href="#">Гостиницы</a></li>
+          <li class="main-nav__item">
+            <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru/">
+              <input class="main-nav__search-input" id="search" type="search" name="search"
+                placeholder="Поиск по сайту" />
+              <button class="main-nav__search-btn" type="submit">Найти</button>
+              <span class="visually-hidden">Поиск:</span>
+            </form>
+          </li>
+          <li class="main-nav__user-item-cart">
+            <a class="main-nav__user-link-cart" href="#">Избранное</a>
+            <span class="visually-hidden">Избранное:</span>
+          </li>
+        </ul>
+        <button class="main-nav__button">Хочу сюда!</button>
+      </nav>
+    </header>
+    <!-- catalog-content -->
+    <main class="catalog-content">
+      <header class="catalog-header">
+        <h1 class="catalog-header__title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+        <!-- filters -->
+        <section class="catalog-filters">
+          <div class="catalog-filters__inner">
+            <h1 class="visually-hidden">Фильтры каталога</h1>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Бассейн">Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Парковка">Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Гостиница">Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Мотель">Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Апартаменты">Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <!-- cost input -->
+          <div class="catalog-filter-range">
+            <div class="catalog-filter-range__title">Стоимость,&#8381;:</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="9000"></label>
+            </div>
+            <!-- presentation input -->
+            <input type="range" class="visually-hidden">
+            <!-- range-controls cost catalog -->
+            <!-- <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div> -->
+            <button class="catalog-btn__transparent" type="submit">Применить</button>
+            <a href="#" class="cancel-price">Сбросить</a>
+          </div>
+          <!-- catalog-products -->
+          <section class="catalog-products__header">
+            <div class=header-inner>
+              <h1 class="visually-hidden">Каталог с карточками товара</h1>
+              <div class="header-inner__container">
+                <p class="container-catalog searh-title">Найдено гостиниц:
+                  <span class="searh-title">38</span>
+                </p>
+              </div>
+              <select name="catalog-sorting__options">
+                <option selected value="s1">Сначала дешёвые</option>
+                <option value="s2">Сначала дорогие</option>
+              </select>
+              <div class="catalog-display directory-type">
+                <button class="grid-btn">grid</button>
+                <button class="display-btn">display</button>
+                <button class="list-btn">list</button>
+              </div>
+            </div>
+            <!-- product cards -->
+            <article class="product-card" style="border:1px black solid ;">
+              <img class="product-img" src="#" alt="Вид из пещеры на ночное небо">
+              <h2 class="product-title">Amara Resort & Spa</h2>
+              <div class="subtitle-container">
+                <p class="product-subtitle">Гостиница</p>
+                <p class="product-subtitle">От 4000 ₽</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="info-btn">подробнее</button>
+                <button class="favour-btn">в избранное</button>
+              </div>
+              <div class="rating">
+                <img class="rating-stars" src="#" alt="рейтинг в звездах, четыре">
+                <p class="rating-text">РЕЙТИНГ:8,5</p>
+              </div>
+            </article>
+            <article class="product-card" style="border:1px black solid ;">
+              <img class="product-img" src="#" alt="Вид из пещеры на ночное небо">
+              <h2 class="product-title">Villas at Poco Diablo</h2>
+              <div class="subtitle-container">
+                <p class="product-subtitle">Гостиница</p>
+                <p class="product-subtitle">От 5000 ₽</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="info-btn">подробнее</button>
+                <button class="favour-btn">в избранное</button>
+              </div>
+              <div class="rating">
+                <img class="rating-stars" src="#" alt="рейтинг в звездах, четыре">
+                <p class="rating-text">РЕЙТИНГ:9,2</p>
+              </div>
+            </article>
+            <article class="product-card" style="border:1px black solid ;">
+              <img class="product-img" src="#" alt="Вид из пещеры на ночное небо">
+              <h2 class="product-title">Desert Quail Inn</h2>
+              <div class="subtitle-container">
+                <p class="product-subtitle">Гостиница</p>
+                <p class="product-subtitle">От 2500 ₽</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="info-btn">подробнее</button>
+                <button class="favour-btn">в избранное</button>
+              </div>
+              <div class="rating">
+                <img class="rating-stars" src="#" alt="рейтинг в звездах, три">
+                <p class="rating-text">РЕЙТИНГ:6,9</p>
+              </div>
+            </article>
+            <article class="product-card" style="border:1px black solid ;">
+              <img class="product-img" src="#" alt="Вид из пещеры на ночное небо">
+              <h2 class="product-title">GreenTree Inn</h2>
+              <div class="subtitle-container">
+                <p class="product-subtitle">Гостиница</p>
+                <p class="product-subtitle">От 1500 ₽</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="info-btn">подробнее</button>
+                <button class="favour-btn">в избранное</button>
+              </div>
+              <div class="rating">
+                <img class="rating-stars" src="#" alt="рейтинг в звездах, две">
+                <p class="rating-text">РЕЙТИНГ: 5,0</p>
+              </div>
+            </article>
+          </section>
+      </header>
+      <section class="content-main mailing">
+        <div class="main-wrapper__title color-item-main">
+          <h2 class="main-title">Подпишитесь на рассылку</h2>
+          <p class="main-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        </div>
+        <div class="mailing__subscribe">
+          <form class="mailing__subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
+            <input class="mailing-form" id="text" type="text" name="text" placeholder="Ваш e-mail" />
+            <button class="mailing-subscribe__btn" type="submit">Подписаться</button>
+            <span class="visually-hidden">Подписаться:</span>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="footer-social">
+        <a href="" class="social-btn vk">
+          <span class="icon-vkontakte">vk</span>
+        </a>
+        <a href="" class="social-btn tg">
+          <span class="icon-telegram">tg</span>
+        </a>
+        <a href="" class="social-btn ytb">
+          <span class="icon-youtube">ytb</span>
+        </a>
+      </div>
+      <div class="footer-telephone">
+        <a href="tel:88128121212" class="telephone-btn tp">+7 (812) 812-12-12</a>
+      </div>
+      <div class="footer-developer-item">
+        <a class="developer-btn" href="https://htmlacademy.ru/">HTML Academy</a>
+        <div class="developer-logo"></div>
+      </div>
+    </footer>
+    <!-- popup -->
+    <div id="popup" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <div class="popup-closed">
+            <h1 class="main-title">Поиск гостиницы в седоне</h1>
+            <div class="circle-item">
+              <a class="cross-item__closed" href="#">X</a>
+            </div>
+          </div>
+          <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="popup-item">
+              <p class="popup-form__text">Дата Заезда</p>
+              <input class="popup-check-form" id="check" type="date" name="text" />
+              <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="popup-item">
+              <p class="popup-form-text">Дата Выезда</p>
+              <input class="popup-exit-form" id="exit" type="date" name="text" />
+            </div>
+            <div class="popup-item__change">
+              <p class="popup-form-text">Взрослые:</p>
+              <div class="popup-form__change">
+                <button class="decrease" type="button">-</button>
+                <input type="text" name="field" value="2" />
+                <button class="increase" type="button">+</button>
+              </div>
+            </div>
+            <div class="popup-form__change">
+              <p class="popup-form__text">Дети:</p>
+              <div class="popup-form__info"
+                data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+                i
+              </div>
+              <div class="popup-form__change">
+                <button class="decrease" type="button">-</button>
+                <input type="text" name="field" value="1" />
+                <button class="increase" type="button">+</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
