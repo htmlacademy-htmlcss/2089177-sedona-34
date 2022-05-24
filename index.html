@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,148 +13,150 @@
   <div class="wrapper">
     <header class="page-header">
       <!-- logo -->
-      <div class="page-haider-logo">
-        <a href="index.html"><img src="#" width="139" height="70" alt="Переход на главную страницу" /></a>
-      </div>
+      <a href="index.html"><img src="#" width="139" height="70" alt="Переход на главную страницу" /></a>
       <!-- navigation -->
-      <nav class="main-nav nav">
-        <ul>
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="#">О Cедоне</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Гостиницы</a></li>
-          <li class="main-nav__item">
-            <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru/">
-              <input class="main-nav__search-input" id="search" type="search" name="search"
-                placeholder="Поиск по сайту" />
-              <button class="main-nav__search-btn" type="submit">
-                Найти
-              </button>
-              <span class="visually-hidden">Поиск:</span>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">О Cедоне</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <form class="nav-search" method="get" action="https://echo.htmlacademy.ru/">
+              <input class="nav-search__input" id="search" type="search" name="search" placeholder="Поиск по сайту" />
+              <button class="nav-search__btn" type="submit">Найти</button>
             </form>
           </li>
-          <li class="main-nav__user-item-cart">
-            <a class="main-nav__user-link-cart" href="#">Избранное</a>
-            <span class="visually-hidden">Избранное:</span>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Избранное</a>
+          </li>
+          <li class="nav-item">
+          <button class="nav__button" type="button">Хочу сюда!</button>
           </li>
         </ul>
-        <button class="main-nav__button">Хочу сюда!</button>
       </nav>
     </header>
+
     <!-- main content -->
     <main class="page-content">
-      <div class="main-background__image">
-        <div class="main-background__text-image"></div>
+      <div class="welcome-image">
+        <div class="welcome-image__text"></div>
+        <div class="border-svg"></div>
       </div>
-      <div class="main-wrapper">
-        <div class="main-wrapper__title">
+
+      <section class="content-main">
+        <div class="container">
           <h1 class="main-title">Седона - небольшой городок в аризоне,<br>заслуживающий большего!</h1>
           <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         </div>
-      </div>
-
-      <section class="content-main">
-        <div class="info-main text-white">
-          <h2 class="title">Настоящий городок</h2>
-          <p class="subtitle">— №1 —</p>
-          <p class="subtitle">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+        <div class="container">
+          <div class="container-inner-primary">
+            <h2 class="title">Настоящий городок</h2>
+            <p class="subtitle-number">— №1 —</p>
+            <p class="subtitle-text">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+          </div>
+          <div class="advantage-photo__one"></div>
         </div>
-        <div class="info-main__photo photo-one"></div>
+
+        <div class="container">
+          <div class="container-inner">
+            <div class="icon-living"></div>
+            <h2 class="title">Жилье</h2>
+            <p class="subtitle-text">Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!
+            </p>
+          </div>
+          <div class="container-inner color-item-food">
+            <div class="icon-food"></div>
+            <h2 class="title">Еда</h2>
+            <p class="subtitle-text">Всегда, заказывайте<br />топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          </div>
+          <div class="container-inner">
+            <div class="icon-souvenir"></div>
+            <h2 class="title">Сувениры</h2>
+            <p class="subtitle-text">
+              Не только китайского,<br>но и настоящего местного производства!</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="advantage-photo__two"></div>
+          <div class="container-inner-primary">
+            <h2 class="title">Там есть Мост Дьявола</h2>
+            <p class="subtitle-number">— №2 —</p>
+            <p class="subtitle-text">
+              Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="container-inner">
+            <h2 class="title">Небольшая площадь</h2>
+            <p class="subtitle-number">— №3 —</p>
+            <p class="subtitle-text">Все достопримечательности<br>находятся очень близко</p>
+          </div>
+          <div class="container-inner color-item-road">
+            <h2 class="title">Красивая дорога</h2>
+            <p class="subtitle-number">— №4 —</p>
+            <p class="subtitle-text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+          </div>
+          <div class="container-inner">
+            <h2 class="title">Мало туристов</h2>
+            <p class="subtitle-number">— №5 —</p>
+            <p class="subtitle-text">Большинство едет в Гранд Каньон<br>и толпится там</p>
+          </div>
+        </div>
       </section>
-
-      <section class="content-main">
-        <div class="info-main">
-          <div class="info-main__icon icon-living"></div>
-          <h2 class="title">Жилье</h2>
-          <p class="subtitle">Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!
-          </p>
-        </div>
-        <div class="info-main color-item-food">
-          <div class="info-main__icon icon-food"></div>
-          <h2 class="title">Еда</h2>
-          <p class="subtitle">Всегда, заказывайте<br />топовый фирменный бургер,<br>вы не разочаруетесь!</p>
-        </div>
-        <div class="info-main">
-          <div class="info-main__icon icon-souvenir"></div>
-          <h2 class="title">Сувениры</h2>
-          <p class="subtitle">
-            Не только китайского,<br>но и настоящего местного производства!</p>
-        </div>
-      </section>
-
-      <section class="content-main">
-        <div class="info-main__photo photo-two"></div>
-        <div class="info-main text-white">
-          <h2 class="title">Там есть Мост Дьявола</h2>
-          <p class="subtitle">— №2 —</p>
-          <p class="subtitle">
-            Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется
-          </p>
-        </div>
-      </section>
-
-      <section class="content-main">
-        <div class="info-main">
-          <h2 class="title">Небольшая площадь</h2>
-          <p class="subtitle">— №3 —</p>
-          <p class="subtitle">Все достопримечательности<br>находятся очень близко</p>
-        </div>
-        <div class="info-main color-item-road">
-          <h2 class="title">Красивая дорога</h2>
-          <p class="subtitle">— №4 —</p>
-          <p class="subtitle">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
-        </div>
-        <div class="info-main">
-          <h2 class="title">Мало туристов</h2>
-          <p class="subtitle">— №5 —</p>
-          <p class="subtitle">Большинство едет в Гранд Каньон<br>и толпится там</p>
-        </div>
-      </section>
-
-      <section class="content-main travel-info">
-        <div class="main-wrapper__title">
-          <h2 class="main-title">Заинтересовались?</h2>
+      <!-- travel-info -->
+      <section class="travel-info">
+        <div class="wrapper__title">
+          <h3 class="main-title">Заинтересовались?</h3>
           <p class="main-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
         </div>
         <div class="travel__search">
-          <button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
+          <button class="travel__btn" type="submit">Поиск гостиницы в Седоне</button>
         </div>
       </section>
-
-      <section class="content-main mailing">
-        <div class="main-wrapper__title color-item-main">
-          <h2 class="main-title">Подпишитесь на рассылку</h2>
+      <!-- mailing -->
+      <section class="mailing">
+        <div class="mailing-title color-item-main">
+          <h3 class="main-title">Подпишитесь на рассылку</h3>
           <p class="main-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         </div>
-        <div class="mailing__subscribe">
-          <form class="mailing__subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
+        <div class="mailing-subscribe">
+          <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
             <input class="mailing-form" id="text" type="text" name="text" placeholder="Ваш e-mail" />
-            <button class="mailing-subscribe__btn" type="submit">Подписаться</button>
-            <span class="visually-hidden">Подписаться:</span>
+            <button class="mailing__btn" type="submit">Подписаться</button>
           </form>
         </div>
       </section>
+
     </main>
     <!-- footer -->
     <footer class="page-footer">
-      <div class="footer-social">
-        <a href="" class="social-btn vk">
-          <span class="icon-vkontakte">vk</span>
-        </a>
-        <a href="" class="social-btn tg">
-          <span class="icon-telegram">tg</span>
-        </a>
-        <a href="" class="social-btn ytb">
-          <span class="icon-youtube">ytb</span>
-        </a>
-      </div>
-      <div class="footer-telephone">
-        <a href="tel:88128121212" class="telephone-btn tp">+7 (812) 812-12-12</a>
-      </div>
-      <div class="footer-developer-item">
-        <a class="developer-btn" href="https://htmlacademy.ru/">HTML Academy</a>
-        <div class="developer-logo"></div>
-      </div>
+      <ul class="social-item">
+        <li class="social-link">
+          <a href="https://vk.com/htmlacademy" class="social-btn vk">
+            <span class="visually-hidden">Ссылка на Вконтакте</span></a>
+        </li>
+        <li class="social-link">
+          <a href="tg://resolve?domain=htmlacademy" class="social-btn tg">
+            <span class="visually-hidden">Ссылка на Телеграмм</span></a>
+        </li>
+        <li class="social-link">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn ytb">
+            <span class="visually-hidden">Ссылка на Ютуб</span></a>
+        </li>
+      </ul>
+      <a class="telephone-btn tp" href="tel:88128121212">+7 (812) 812-12-12</a>
+
+      <a class="developer-link" href="https://htmlacademy.ru/">
+        <img class="developer-logo" src="#" alt="Логотип HTML Academy">
+      </a>
+
     </footer>
   </div>
   <!-- popup -->
@@ -161,7 +164,7 @@
     <div class="popup-body">
       <div class="popup-content">
         <div class="popup-closed">
-          <h1 class="main-title">Поиск гостиницы в седоне</h1>
+          <h2 class="main-title">Поиск гостиницы в седоне</h2>
           <div class="circle-item">
             <a class="cross-item__closed" href="#">X</a>
           </div>
@@ -181,7 +184,7 @@
             <p class="popup-form-text">Взрослые:</p>
             <div class="popup-form__change">
               <button class="decrease" type="button">-</button>
-              <input type="text" name="field" value="2"/>
+              <input type="text" name="field" value="2" />
               <button class="increase" type="button">+</button>
             </div>
           </div>
@@ -197,7 +200,7 @@
               <button class="increase" type="button">+</button>
             </div>
           </div>
-          <button class="popup-form__send-button">найти</button>
+          <button class="popup-form__send-button" type="submit">найти</button>
         </form>
       </div>
     </div>
