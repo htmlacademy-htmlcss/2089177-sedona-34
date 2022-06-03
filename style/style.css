@@ -51,7 +51,7 @@ li {
   font-display: swap;
 }
 
-/* text-style */
+/* index.html */
 /* main-page-text */
 .main-title {
   font-weight: 700;
@@ -70,7 +70,6 @@ li {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
   text-transform: uppercase;
 }
 
@@ -192,6 +191,7 @@ li {
   width: 1200px;
   height: 411px;
   background: url("../images/mailing-background\ .jpg") no-repeat;
+  background-color: #6c6c6c;
   color: #ffffff;
 }
 
@@ -294,8 +294,9 @@ li {
 /* catalog-content */
 .catalog-header {
   width: 1200px;
-  height: 403px;
+  height: 393px;
   background: url("../images/catalog-header-background.jpg") no-repeat;
+  background-color: #6c6c6c;
   color: #ffffff;
 }
 
