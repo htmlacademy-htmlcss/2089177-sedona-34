@@ -2,32 +2,26 @@
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
-  padding: 0;
-  border: 0;
+  background: #E5E5E5;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .wrapper {
   width: 1200px;
   text-align: center;
   margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
   box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-li {
-  list-style: none;
 }
 
 .visually-hidden {
@@ -86,9 +80,11 @@ li {
   line-height: 26px;
   text-transform: capitalize;
 }
+
 .nav-link {
   color: #000000;
 }
+
 .nav__button {
   width: 160px;
   height: 37px;
@@ -109,37 +105,23 @@ li {
   width: 1200px;
   height: 485px;
   background: url("../images/welcome-image.jpg") no-repeat;
+  background-size: cover;
 }
 
 .welcome-image__text {
   width: 458px;
   height: 353px;
   background: url("../images/welcome-title.svg") no-repeat;
+  background-size: cover;
 }
 
 .border-svg {
   width: 1200px;
   height: 57px;
   background: url("../images/border-welcome-image.png") no-repeat;
+  background-size: cover;
 }
 
-.icon-living {
-  width: 76px;
-  height: 73px;
-  background: url("../images/icon/advantage-living-icon.svg") no-repeat;
-}
-
-.icon-food {
-  width: 76px;
-  height: 73px;
-  background: url("../images/icon/advantage-food-icon.svg") no-repeat;
-}
-
-.icon-souvenir {
-  width: 76px;
-  height: 77px;
-  background: url("../images/icon/advantage-souvenir-icon.svg") no-repeat;
-}
 
 .container-inner-primary {
   background: #82b3d3;
@@ -196,6 +178,7 @@ li {
   width: 1200px;
   height: 411px;
   background: url("../images/mailing-background\ .jpg") no-repeat;
+  background-size: cover;
   background-color: #6c6c6c;
   color: #ffffff;
 }
@@ -206,6 +189,7 @@ li {
   width: 24px;
   height: 15px;
   background: url("../images/icon/vk-icon.svg") no-repeat;
+
 }
 
 .social-link .tg {
@@ -234,11 +218,13 @@ li {
   font-size: 60px;
   line-height: 78px;
 }
+
 .catalog-filter__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
+
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
@@ -299,8 +285,8 @@ li {
 /* catalog-content */
 .catalog-header {
   width: 1200px;
-  height: 393px;
   background: url("../images/catalog-header-background.jpg") no-repeat;
+  background-size: cover;
   background-color: #6c6c6c;
   color: #ffffff;
 }
@@ -367,11 +353,15 @@ li {
 }
 
 .favour-btn {
-  background: #756157;
+  background: #82b3d3;
 }
 
 .info-btn {
-  background: #82b3d3;
+  background: #756157;
+}
+
+.active-btn {
+  background: #7DB54F;
 }
 
 /* pagination */
