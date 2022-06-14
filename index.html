@@ -14,25 +14,26 @@
 
   <div class="wrapper">
     <header class="page-header">
-      <!-- logo -->
-      <a href="index.html"><img src="images/logo.svg" width="139" height="70" alt="Переход на главную страницу" /></a>
       <!-- navigation -->
+      <img src="images/logo.svg" width="139" height="75" alt="Переход на главную страницу" />
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="#">О Cедоне</a></li>
           <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
-
+      </nav>
+      <nav class="nav-user">
         <ul class="nav-list">
           <li class="nav-item">
             <form class="nav-search" method="get" action="https://echo.htmlacademy.ru/">
-              <input class="nav-search__input" id="search" type="search" name="search" placeholder="Поиск по сайту" />
-              <button class="nav-search__btn" type="submit">Найти</button>
+              <input class="nav-search__input" id="search" type="search" name="search" />
+              <button class="nav-search__btn" type="submit"></button>
             </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link favorites" href="#">Избранное</a>
+            <a class="nav__button-favorites" type="submit"></a>
+
           </li>
           <li class="nav-item">
             <button class="nav__button" type="button">Хочу сюда!</button>
@@ -51,9 +52,9 @@
       </div>
 
       <section class="content-main">
-        <div class="container">
-          <h1 class="main-title">Седона - небольшой городок в аризоне,<br>заслуживающий большего!</h1>
-          <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+        <div class="container-main">
+          <h2 class="main-title">Седона - небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+          <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче чем Гранд-Каньон!</p>
         </div>
         <div class="container">
           <div class="container-inner-primary">
@@ -61,7 +62,8 @@
             <p class="subtitle">— №1 —</p>
             <p class="subtitle">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
           </div>
-          <img src="images/photo-1.jpg" class="advantage-photo__one" width="800px" height="384px" alt="Фото улицы Седоны"></img>
+          <img src="images/photo-1.jpg" class="advantage-photo__one" width="800px" height="384px"
+            alt="Фото улицы Седоны"></img>
         </div>
 
         <div class="container">
@@ -77,16 +79,16 @@
             <p class="subtitle">Всегда, заказывайте<br />топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </div>
           <div class="container-inner">
-            <div class="icon-souvenir"></div>
-            <img src="images/icon/advantage-souvenir-icon.svg" width="76px" height="77px" alt="иконка подарка">
+            <img src="images/icon/advantage-souvenir-icon.svg" width="76px" height="73px" alt="иконка подарка">
             <h2 class="title">Сувениры</h2>
             <p class="subtitle">
-              Не только китайского,<br>но и настоящего местного производства!</p>
+              Не только китайского,<br>но и настоящего местного<br> производства!</p>
           </div>
         </div>
 
         <div class="container">
-          <img src="images/photo-2.jpg" class="advantage-photo__two" width="800px" height="384px" alt="фото моста дьявола"></img>
+          <img src="images/photo-2.jpg" class="advantage-photo__two" width="800px" height="384px"
+            alt="фото моста дьявола"></img>
           <div class="container-inner-primary">
             <h2 class="title">Там есть Мост Дьявола</h2>
             <p class="subtitle">— №2 —</p>
@@ -110,7 +112,7 @@
           <div class="container-inner">
             <h2 class="title">Мало туристов</h2>
             <p class="subtitle">— №5 —</p>
-            <p class="subtitle">Большинство едет в Гранд Каньон<br>и толпится там</p>
+            <p class="subtitle">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </div>
         </div>
       </section>
