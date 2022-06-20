@@ -18,24 +18,28 @@
       <img src="images/logo.svg" width="139" height="75" alt="Переход на главную страницу" />
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-active" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="#">О Cедоне</a></li>
           <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
+
+
         </ul>
       </nav>
       <nav class="nav-user">
         <ul class="nav-list">
-          <li class="nav-item">
+          <li class="nav-user-item">
             <form class="nav-search" method="get" action="https://echo.htmlacademy.ru/">
-              <input class="nav-search__input" id="search" type="search" name="search" />
+              <input class="nav-search__input visually-hidden" id="search" type="search" name="search" />
               <button class="nav-search__btn" type="submit"></button>
             </form>
           </li>
-          <li class="nav-item">
-            <a class="nav__button-favorites" type="submit"></a>
+          <li class="nav-user-item">
+            <a class="nav__button-favorites" type="submit">
+              <span class="nav__button-count">12</span>
+            </a>
 
           </li>
-          <li class="nav-item">
+          <li class="nav-user-item__button">
             <button class="nav__button" type="button">Хочу сюда!</button>
           </li>
         </ul>
@@ -43,7 +47,7 @@
     </header>
 
     <!-- main content -->
-    <main class="page-content">
+    <main class="page-content main-container">
       <div class="welcome-image">
         <div class="welcome-image__text">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -53,14 +57,14 @@
 
       <section class="content-main">
         <div class="container-main">
-          <h2 class="main-title">Седона - небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+          <h2 class="main-title">Седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
           <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче чем Гранд-Каньон!</p>
         </div>
         <div class="container">
           <div class="container-inner-primary">
-            <h2 class="title">Настоящий городок</h2>
+            <h2 class="title">Настоящий<br> городок</h2>
             <p class="subtitle">— №1 —</p>
-            <p class="subtitle">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+            <p class="subtitle">Седона - не аттракцион для<br> туристов,там течет своя<br> жизнь</p>
           </div>
           <img src="images/photo-1.jpg" class="advantage-photo__one" width="800px" height="384px"
             alt="Фото улицы Седоны"></img>
@@ -90,7 +94,7 @@
           <img src="images/photo-2.jpg" class="advantage-photo__two" width="800px" height="384px"
             alt="фото моста дьявола"></img>
           <div class="container-inner-primary">
-            <h2 class="title">Там есть Мост Дьявола</h2>
+            <h2 class="title">Там есть<br> Мост Дьявола</h2>
             <p class="subtitle">— №2 —</p>
             <p class="subtitle">
               Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется
@@ -100,17 +104,17 @@
 
         <div class="container">
           <div class="container-inner">
-            <h2 class="title">Небольшая площадь</h2>
+            <h2 class="title">Небольшая<br> площадь</h2>
             <p class="subtitle">— №3 —</p>
             <p class="subtitle">Все достопримечательности<br>находятся очень близко</p>
           </div>
           <div class="container-inner color-item-road">
-            <h2 class="title">Красивая дорога</h2>
+            <h2 class="title">Красивая<br> дорога</h2>
             <p class="subtitle">— №4 —</p>
             <p class="subtitle">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </div>
           <div class="container-inner">
-            <h2 class="title">Мало туристов</h2>
+            <h2 class="title">Мало<br> туристов</h2>
             <p class="subtitle">— №5 —</p>
             <p class="subtitle">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </div>

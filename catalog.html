@@ -19,35 +19,44 @@
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="#">О Cедоне</a></li>
-          <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-active" href="catalog.html">Гостиницы</a></li>
+
         </ul>
       </nav>
       <nav class="nav-user">
         <ul class="nav-list">
-          <li class="nav-item">
+          <li class="nav-user-item">
             <form class="nav-search" method="get" action="https://echo.htmlacademy.ru/">
-              <input class="nav-search__input" id="search" type="search" name="search" />
+              <input class="nav-search__input visually-hidden" id="search" type="search" name="search" />
               <button class="nav-search__btn" type="submit"></button>
             </form>
           </li>
-          <li class="nav-item">
-            <a class="nav__button-favorites" type="submit"></a>
-
+          <li class="nav-user-item">
+            <a class="nav__button-favorites" type="submit">
+              <span class="nav__button-count">12</span>
+            </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-user-item__button">
             <button class="nav__button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
+
     <!-- catalog-content -->
-    <main class="catalog-content">
+    <main class="catalog-content main-container">
       <section class="catalog-header">
         <h1 class="catalog-header__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="breadcrumbs-home-image"></span>
+            </a>
           </li>
+          <li class="breadcrumbs-item">
+            <span class="breadcrumbs-arrow"></span>
+          </li>
+
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
@@ -56,6 +65,7 @@
         <div class="catalog-filters">
           <h2 class="visually-hidden">Фильтры каталога</h2>
           <form class="catalog-filters__form" method="get" action="https://echo.htmlacademy.ru/">
+           <div class="catalog-wrapper">
             <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
@@ -98,31 +108,38 @@
               </ul>
             </fieldset>
 
+           </div>
+
+
             <!-- cost input -->
             <fieldset class="catalog-filter-range">
               <legend class="catalog-filter__title">Стоимость,&#8381;:</legend>
+
               <div class="price-controls">
-                <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="number" name="max-price" value="9000"></label>
+             <div class="price-controls-wrapper">
+                <label class="min-price"><input type="number" name="min-price" value="0">от</label>
+                <label class="max-price"><input type="number" name="max-price" value="9000">до</label>
               </div>
-              <input type="range" class="range-controls">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>
+
 
               <!-- presentation input -->
 
               <!-- range-controls cost catalog -->
-              <!-- <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div> -->
 
-            </fieldset>
             <div class="catalog-filters_btns">
               <button class="catalog-btn__transparent" type="submit">Применить</button>
               <button type="reset" class="reset">Сбросить</button>
             </div>
+            </fieldset>
+
           </form>
         </div>
       </section>
@@ -131,7 +148,7 @@
       <section class="catalog-products">
         <div class=products-haider>
           <h3 class="visually-hidden">Каталог с карточками товара</h3>
-          <p class="container-catalog searh-title">Найдено гостиниц:<span class="searh-title catalog-counter ">38
+          <p class="container-catalog searh-title">Найдено гостиниц: <span class="searh-title catalog-counter ">38
 
             </span></p>
           <select name="catalog-sorting__options">
