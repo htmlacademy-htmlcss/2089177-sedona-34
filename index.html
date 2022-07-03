@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style/style.css">
   <title>HTML Academy: Седона</title>
 </head>
+
 <body>
   <div class="wrapper">
     <header class="page-header">
@@ -31,12 +33,12 @@
             </form>
           </li>
           <li class="nav-user-item">
-            <a  class="nav__button-favorites"  href="#">
+            <a class="nav__button-favorites" href="#">
               <span class="nav__button-count">12</span>
             </a>
           </li>
           <li class="nav-user-item__button">
-            <button class=" nav__button button-animation__first" type="button">Хочу сюда!</button>
+            <a class=" nav__button button-animation__first" type="button" href="#popup">Хочу сюда!</a>
             <p class="visually-hidden">Кнопка хочу сюда</p>
           </li>
         </ul>
@@ -58,9 +60,9 @@
         </div>
         <div class="container">
           <div class="container-inner-primary">
-            <h2 class="title">Настоящий городок</h2>
+            <h2 class="title">Настоящий <br>городок</h2>
             <p class="subtitle">— №1 —</p>
-            <p class="subtitle">Седона - не аттракцион для туристов,там течет своя жизнь</p>
+            <p class="subtitle">Седона - не аттракцион для<br> туристов,там течет своя<br> жизнь</p>
           </div>
           <img src="images/photo-1.jpg" class="advantage-photo__one" width="800px" height="384px"
             alt="Фото улицы Седоны"></img>
@@ -69,7 +71,7 @@
           <div class="container-inner">
             <img src="images/icon/advantage-living-icon.svg" width="76px" height="73px" alt="иконка дома">
             <h2 class="title">Жильё</h2>
-            <p class="subtitle">Рекомендуем пожить в настоящем мотеле,<br>все как в кино!
+            <p class="subtitle">Рекомендуем пожить в<br> настоящем мотеле,<br>все как в кино!
             </p>
           </div>
           <div class="container-inner color-item-food">
@@ -119,7 +121,7 @@
           <h3 class="main-title">Заинтересовались?</h3>
           <p class="main-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <button class="travel__btn button-animation__first" type="submit">Поиск гостиницы в Седоне</button>
+          <a class="travel__btn button-animation__first" href="#popup">Поиск гостиницы в Седоне</a>
         </div>
       </section>
       <!-- mailing -->
@@ -178,47 +180,55 @@
     </footer>
 
     <!-- popup -->
-    <div id="popup" class="popup visually-hidden">
+    <div id="popup" class="popup">
       <div class="popup-body">
         <div class="popup-content">
           <div class="popup-closed">
             <h2 class="main-title">Поиск гостиницы в седоне</h2>
-            <div class="circle-item">
-              <a class="cross-item__closed" href="#">X</a>
+            <div class="closed-item">
+              <a class="cross-item__closed" href="#">
+                <span class="cross-item__closed-icon"></span>
+              </a>
             </div>
           </div>
 
           <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="popup-item">
-              <p class="popup-form__text">Дата Заезда</p>
-              <input class="popup-check-form" id="check" type="date" name="text" />
-              <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
+              <p class="popup-form__text">Дата Заезда:</p>
+              <input class="popup-check-form" id="check" type="text" name="Дата Заезда" value="27 апреля 2020"
+                placeholder="Укажите дату" />
+
             </div>
+            <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
             <div class="popup-item">
-              <p class="popup-form-text">Дата Выезда</p>
-              <input class="popup-exit-form" id="exit" type="date" name="text" />
+              <p class="popup-form__text">Дата Выезда:</p>
+              <input class="popup-exit-form" id="exit" type="text" name="Дата Выезда" value="1 сентября 2021"
+                placeholder="Укажите дату" />
             </div>
-            <div class="popup-item__change">
-              <p class="popup-form-text">Взрослые:</p>
-              <div class="popup-form__change">
-                <button class="decrease" type="button">-</button>
-                <input type="text" name="field" value="2" />
-                <button class="increase" type="button">+</button>
+            <p class="popup-form__alert-cheked">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="popup-item">
+              <div class="popup-item__change">
+                <p class="popup-form__text">Взрослые:</p>
+                <div class="popup-form__change">
+                  <button class="decrease" type="button"></button>
+                  <input class="form-quantity " type="number" name="Взрослые" value="2" max="10" />
+                  <button class="increase" type="button"></button>
+                </div>
+              </div>
+              <div class="popup-item__change">
+                <p class="popup-form__text">Дети:</p>
+                <div class="popup-form__info"
+                  data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+                  i
+                </div>
+                <div class="popup-form__change">
+                  <button class="decrease form__change__decrease-position" type="button"></button>
+                  <input class="form-quantity quantity-position" type="number" name="Дети" value="1" max="10" />
+                  <button class="increase form__change__increase-position" type="button"></button>
+                </div>
               </div>
             </div>
-            <div class="popup-form__change">
-              <p class="popup-form__text">Дети:</p>
-              <div class="popup-form__info"
-                data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
-                i
-              </div>
-              <div class="popup-form__change">
-                <button class="decrease" type="button">-</button>
-                <input type="text" name="field" value="1" />
-                <button class="increase" type="button">+</button>
-              </div>
-            </div>
-            <button class="popup-form__send-button" type="submit">найти</button>
+            <button class="popup-form__send-button button-animation__second" type="submit">найти</button>
           </form>
         </div>
       </div>

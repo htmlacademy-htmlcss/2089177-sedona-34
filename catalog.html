@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="nav-user-item__button">
-            <button class=" nav__button button-animation__first" type="button">Хочу сюда!</button>
+            <a class=" nav__button button-animation__first" type="button" href="#popup">Хочу сюда!</a>
             <p class="visually-hidden">Кнопка хочу сюда</p>
           </li>
         </ul>
@@ -52,8 +52,7 @@
         <!-- breadcrumbs -->
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="breadcrumbs-home-image"></span>
+            <a class="breadcrumbs-link breadcrumbs-home-image" href="index.html">
             </a>
           </li>
               <li class="breadcrumbs-item">
@@ -98,21 +97,21 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input checked class="control-input visually-hidden" value="Гостиница" type="radio"
-                        name="radio">
+                        name="Тип жилья">
                       <span class="checkbox-checkmark-type"></span>
                       <span class="control-title">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden"  value="Мотель" type="radio" name="radio">
+                      <input class="control-input visually-hidden"  value="Мотель" type="radio" name="Тип жилья">
                       <span class="checkbox-checkmark-type"></span>
                       <span class="control-title">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item ">
                     <label class="control">
-                      <input class="control-input visually-hidden" value="Апартаменты" type="radio" name="radio">
+                      <input class="control-input visually-hidden" value="Апартаменты" type="radio" name="Тип жилья">
                       <span class="checkbox-checkmark-type"></span>
                       <span class="control-title">Апартаменты</span>
                     </label>
@@ -125,7 +124,7 @@
 
             <!-- cost input -->
             <fieldset class="catalog-filter-range">
-              <legend class="catalog-filter__title">Стоимость,&#8381;:</legend>
+              <legend class="catalog-filter__title">Стоимость, &#8381;:</legend>
 
               <div class="price-controls">
                 <div class="price-controls-wrapper">
@@ -144,8 +143,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <button disabled class="range-toggle range-toggle-min"></button>
-                  <button disabled class="range-toggle range-toggle-max"></button>
+                  <button  class="range-toggle range-toggle-min"></button>
+                  <button  class="range-toggle range-toggle-max"></button>
                 </div>
               </div>
 
@@ -165,7 +164,7 @@
           <h3 class="visually-hidden">Каталог с карточками товара</h3>
           <p class="container-catalog searh-title">Найдено гостиниц: <span class="searh-title catalog-counter ">38</span></p>
          <div class="products-haider-wrapper">
-          <select name="catalog-sorting__options">
+          <select class="catalog-sorting__options select-style" aria-label="Сортировка">
             <option selected value="s1">Сначала дешёвые</option>
             <option value="s2">Сначала дорогие</option>
             <option value="s3">Сначала популярные</option>
@@ -182,7 +181,7 @@
         </div>
 
         <!-- product cards -->
-        <div class=products-main>
+        <div class="products-main">
           <article class="product-card">
             <a class="product-card-link" href="#"><img class="product-img" src="images/catalog/amara-resort.jpg" width="300" height="211"
               alt="Вид из пещеры на ночное небо">
@@ -333,51 +332,57 @@
 
     </footer>
     <!-- popup -->
-    <div id="popup" class="popup visually-hidden">
+    <div id="popup" class="popup">
       <div class="popup-body">
         <div class="popup-content">
           <div class="popup-closed">
             <h2 class="main-title">Поиск гостиницы в седоне</h2>
-            <div class="circle-item">
-              <a class="cross-item__closed" href="#">X</a>
+            <div class="closed-item">
+              <a class="cross-item__closed" href="#">
+                <span class="cross-item__closed-icon"></span>
+              </a>
             </div>
           </div>
+
           <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="popup-item">
-              <p class="popup-form__text">Дата Заезда</p>
-              <input class="popup-check-form" id="check" type="date" name="text" />
-              <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
+              <p class="popup-form__text">Дата Заезда:</p>
+              <input class="popup-check-form" id="check" type="text" name="Дата Заезда" value="" placeholder="Укажите дату"/>
+
             </div>
+            <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
             <div class="popup-item">
-              <p class="popup-form-text">Дата Выезда</p>
-              <input class="popup-exit-form" id="exit" type="date" name="text" />
+              <p class="popup-form__text">Дата Выезда:</p>
+              <input class="popup-exit-form" id="exit" type="text" name="Дата Выезда" value="" placeholder="Укажите дату"/>
             </div>
+            <p class="popup-form__alert-cheked">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="popup-item">
             <div class="popup-item__change">
-              <p class="popup-form-text">Взрослые:</p>
+              <p class="popup-form__text">Взрослые:</p>
               <div class="popup-form__change">
-                <button class="decrease" type="button">-</button>
-                <input type="text" name="field" value="2" />
-                <button class="increase" type="button">+</button>
+                <button class="decrease" type="button"></button>
+                <input class="form-quantity " type="number" name="Взрослые" value="2" max="10"/>
+                <button class="increase" type="button"></button>
               </div>
             </div>
-            <div class="popup-form__change">
+            <div class="popup-item__change">
               <p class="popup-form__text">Дети:</p>
               <div class="popup-form__info"
                 data-title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
                 i
               </div>
               <div class="popup-form__change">
-                <button class="decrease" type="button">-</button>
-                <input type="text" name="field" value="1" />
-                <button class="increase" type="button">+</button>
+                <button class="decrease form__change__decrease-position" type="button"></button>
+                <input class ="form-quantity quantity-position" type="number" name="Дети" value="1" max="10"/>
+                <button class="increase form__change__increase-position" type="button"></button>
               </div>
             </div>
-            <button class="popup-form__send-button" type="submit">найти</button>
+          </div>
+            <button class="popup-form__send-button button-animation__second" type="submit">найти</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
 </body>
 
 </html>
