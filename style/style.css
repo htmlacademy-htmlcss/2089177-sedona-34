@@ -15,8 +15,7 @@ body {
 
 img {
   max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .wrapper {
@@ -1091,7 +1090,6 @@ button[disabled] {
 
 .price__input-text {
   position: absolute;
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
