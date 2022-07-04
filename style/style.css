@@ -411,13 +411,7 @@ button[disabled] {
   min-height: 384px;
   min-width: 400px;
   flex: 1 0;
-
 }
-.advantage-photo__one{
- object-fit: cover
-
-}
-
 
 .container-inner img {
   margin-top: 30px;
@@ -685,11 +679,13 @@ button[disabled] {
   border: 2px solid #68A2CA;
 }
 .select-style:active{
+  outline: none;
   border: 2px solid #3F5E72;
 }
 .select-style:disabled{
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .product-title {
   font-weight: 700;
   font-size: 24px;
@@ -1353,7 +1349,19 @@ margin-right: 20px;
   background-color: #ffffff;
   -webkit-appearance: none;
 }
-
+.value-select__list:hover{
+  border: 2px solid #68A2CA;
+}
+.value-select__list:active{
+  border: 2px solid #68A2CA;
+}
+.value-select__list:focus{
+  outline: none;
+  border: 2px solid #3F5E72;
+}
+.value-select__list:disabled{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
 .select-value {
   min- width: 160px;
   min-height: 49px;
@@ -1567,17 +1575,19 @@ opacity: 0.3;
 .decrease{
   padding: 0;
   border-radius: 4px;
-  border: 3px solid #F2F2F2;
   left: 75px;
   top: 12px;
-
-}
+  background: url(../images/popup/popup-decrease.svg) no-repeat;
+  background-position: center;
+  }
 .increase{
   padding: 0;
   border-radius: 4px;
-  border: 3px solid #F2F2F2;
   left: 160px;
   top: 12px;
+  background: url(../images/popup/popup-plus.svg) no-repeat;
+  background-position: center;
+
 }
 .form__change__decrease-position{
 left: 30px;
@@ -1585,17 +1595,7 @@ left: 30px;
 .form__change__increase-position{
 left:115px
 }
-.decrease::after{
-  position: absolute ;
-  content: "";
-  background: url(../images/popup/popup-decrease.svg) no-repeat;
-  background-position: center;
-  width: 13px;
-  height: 13px;
-  opacity: 0.3;
-  top:3px;
-  left: 3px;
-}
+
 .form-quantity{
   width: 133px;
   height: 50px;
@@ -1625,25 +1625,14 @@ input::-webkit-inner-spin-button {
 .form-quantity:active{
   outline: 2px solid #000000;
 }
-.increase::after{
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  width: 13px;
-  height: 13px;
-  content: "";
-  background: url(../images/popup/popup-plus.svg) no-repeat;
-  opacity: 0.3;
-  border: none;
-  outline: none;
-}
 
-.decrease:hover::after{
+.decrease:hover{
+
   outline: none;
   border: none;
   opacity: 1;
 }
-.decrease:active::after{
+.decrease:active{
   outline: none;
   border: none;
   opacity: 0.3;
@@ -1653,10 +1642,10 @@ input::-webkit-inner-spin-button {
   outline: none;
   border: 3px solid #83B3D3;
 }
-.increase:hover::after{
+.increase:hover{
   opacity: 1;
 }
-.increase:active::after{
+.increase:active{
   outline: none;
   border: none;
   opacity: 0.3;
