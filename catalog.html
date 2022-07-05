@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" sizes="32x32">
   <link rel="stylesheet" href="style/style.css">
   <title>Седона: Каталог</title>
 </head>
@@ -14,7 +14,7 @@
   <div class="wrapper">
     <header class="page-header">
       <!-- navigation -->
-      <img src="images/logo.svg" width="139" height="75" alt="Переход на главную страницу" />
+      <img src="images/logo.svg" width="139" height="75" alt="Переход на главную страницу." />
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
@@ -26,19 +26,22 @@
         <ul class="nav-list">
           <li class="nav-user-item">
             <form class="nav-search" method="get" action="https://echo.htmlacademy.ru/">
+              <label for="search" class="visually-hidden">Поле поиска</label>
               <input class="nav-search__input visually-hidden" id="search" type="search" name="search" />
               <p class="visually-hidden">Кнопка поиска</p>
-              <button class=" nav-search__btn" type="submit"></button>
+              <button class=" nav-search__btn" type="submit"><span class="visually-hidden">Открыть поиск</span></button>
             </form>
           </li>
           <li class="nav-user-item">
             <a class="nav__button-favorites" href="#">
+              <span class="visually-hidden">Открыть избранное</span>
               <span class="nav__button-count">12</span>
             </a>
           </li>
           <li class="nav-user-item__button">
-            <a class=" nav__button button-animation__first" href="#popup">Хочу сюда!</a>
             <p class="visually-hidden">Кнопка хочу сюда</p>
+            <a class=" nav__button button-animation__first" href="#popup">Хочу сюда!</a>
+
           </li>
         </ul>
       </nav>
@@ -184,7 +187,7 @@
         <div class="products-main">
           <article class="product-card">
             <a class="product-card-link" href="#"><img class="product-img" src="images/catalog/amara-resort.jpg"
-                width="300" height="211" alt="Вид из пещеры на ночное небо">
+                width="300" height="211" alt="Вид из пещеры на ночное небо.">
               <h3 class="product-title">Amara Resort & Spa</h3>
             </a>
             <div class="subtitle-container">
@@ -197,13 +200,13 @@
             </div>
             <div class="rating">
               <img class="rating-stars" src="images/catalog/rating-star-4.svg" width="140" height="37"
-                alt="рейтинг в звездах, четыре">
+                alt="Рейтинг в звездах, четыре.">
               <p class="rating-text">РЕЙТИНГ: 8,5</p>
             </div>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#"><img class="product-img" src="images/catalog/villas-at-poco.jpg"
-                width="300" height="211" alt="Вид на горы и на ночное небо">
+                width="300" height="211" alt="Вид на горы и на ночное небо.">
               <h3 class="product-title">Villas at Poco Diablo</h3>
             </a>
             <div class="subtitle-container">
@@ -216,13 +219,13 @@
             </div>
             <div class="rating">
               <img class="rating-stars" src="images/catalog/rating-star-4.svg" width="140" height="37"
-                alt="рейтинг в звездах, четыре">
+                alt="Рейтинг в звездах, четыре.">
               <p class="rating-text">РЕЙТИНГ: 9,2</p>
             </div>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#"><img class="product-img" src="images/catalog/desert-quail.jpg"
-                width="300" height="211" alt="Вид на горы днем">
+                width="300" height="211" alt="Вид на горы днем.">
               <h3 class="product-title">Desert Quail Inn</h3>
             </a>
             <div class="subtitle-container">
@@ -235,13 +238,13 @@
             </div>
             <div class="rating">
               <img class="rating-stars" src="images/catalog/rating-star-3.svg" width="140" height="37"
-                alt="рейтинг в звездах, три">
+                alt="Рейтинг в звездах, три.">
               <p class="rating-text">РЕЙТИНГ: 6,9</p>
             </div>
           </article>
           <article class="product-card">
             <a class="product-card-link" href="#"><img class="product-img" src="images/catalog/green-tree.jpg"
-                width="300" height="211" alt="Вид на горы на закате">
+                width="300" height="211" alt="Вид на горы на закате.">
               <h3 class="product-title">GreenTree Inn</h3>
             </a>
             <div class="subtitle-container">
@@ -254,7 +257,7 @@
             </div>
             <div class="rating">
               <img class="rating-stars" src="images/catalog/rating-star-2.svg" width="140" height="37"
-                alt="рейтинг в звездах, две">
+                alt="Рейтинг в звездах, две.">
               <p class="rating-text">РЕЙТИНГ: 5,0</p>
             </div>
           </article>
@@ -287,6 +290,7 @@
         </div>
         <div class="mailing-subscribe">
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
+            <label class="visually-hidden" for="text">Поле ввода e-mail</label>
             <input class="mailing-form" id="text" type="text" name="text" placeholder="Ваш e-mail" required />
             <button class="mailing__btn button-animation__second" type="submit">Подписаться</button>
           </form>
@@ -334,7 +338,6 @@
         </svg>
       </a>
     </footer>
-    <!-- popup -->
     <div id="popup" class="popup">
       <div class="popup-body">
         <div class="popup-content">
@@ -349,15 +352,15 @@
 
           <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="popup-item">
-              <p class="popup-form__text">Дата Заезда:</p>
-              <input class="popup-check-form" id="check" type="text" name="Дата Заезда" value="27 апреля 2020"
+              <label for="check" class="popup-form__text">Дата Заезда:</label>
+              <input required class="popup-check-form" id="check" type="text" name="Дата Заезда" value="27 апреля 2020"
                 placeholder="Укажите дату" />
 
             </div>
             <p class="popup-form__alert">Мы не можем отправить вас в прошлое.</p>
             <div class="popup-item">
-              <p class="popup-form__text">Дата Выезда:</p>
-              <input class="popup-exit-form" id="exit" type="text" name="Дата Выезда" value="1 сентября 2021"
+              <label for="exit" class="popup-form__text">Дата Выезда:</label>
+              <input required class="popup-exit-form" id="exit" type="text" name="Дата Выезда" value="1 сентября 2021"
                 placeholder="Укажите дату" />
             </div>
             <p class="popup-form__alert-cheked">На эти даты есть свободные номера. Пока есть.</p>
@@ -367,7 +370,8 @@
                 <div class="popup-form__change">
                   <button class="decrease" type="button"><span class="visually-hidden">Уменьшить количество
                       взрослых</span></button>
-                  <input class="form-quantity " type="number" name="Взрослые" value="2" max="10" />
+                  <label class="visually-hidden" for="adults">Укажите количество взрослых гостей</label>
+                  <input required class="form-quantity " id="adults" type="number" name="Взрослые" value="2" max="10" />
                   <button class="increase" type="button"><span class="visually-hidden">Увеличить количество
                       взрослых</span></button>
                 </div>
@@ -379,9 +383,11 @@
                   i
                 </div>
                 <div class="popup-form__change">
-                  <button class="decrease form__change__decrease-position" type="button"><span
-                      class="visually-hidden">Уменьшить количество детей</span></button>
-                  <input class="form-quantity quantity-position" type="number" name="Дети" value="1" max="10" />
+                  <button class="decrease form__change__decrease-position" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span></button>
+                  <label for="children" class="visually-hidden">Укажите количество гостей детского возраста</label>
+                  <input required class="form-quantity quantity-position" id="children" type="number" name="Дети"
+                    value="1" max="10" />
                   <button class="increase form__change__increase-position" type="button"><span
                       class="visually-hidden">Увеличить количество взрослых</span></button>
                 </div>
